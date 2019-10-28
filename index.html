@@ -25,15 +25,33 @@
         vColor = aVertexColor;
       }
     </script>
+    <style>
+    div.static {
+      position: absolute;
+    top: 80px;
+    right: 0;
+    width: 400px;
+    height: 200px;
+    border: 3px solid rgb(47, 54, 37);
+    }
+    .font{
+      font-size: 1.5em;
+      font-family: "Times New Roman", Times, serif;
+
+    }
+    </style>
   </head>
   <body onload="webGLStart();">
     <canvas id="mycanvas" style="border: none" width="500" height="500"></canvas>
     <!-- <h2>Interaksi</h2> -->
-    <ul>
+    <div class="static">
+      <ul class="font">
       <li>W / S: Jauhkan / Dekatkan kamera</li>
       <li>Left/Right arrow : rotate ke kanan/kiri</li>
       <li>Up/Down arrow : rotate ke atas/bawah</li>
       <li>Mouse (click n drag) : ubah orientasi</li>
     </ul>
+  </div>
+    
   </body>
 </html>
